@@ -1,0 +1,31 @@
+@import '../../../../assets/scss/mixin';
+
+@import'../../../../assets/scss/variables';
+
+
+.main-btn-dropmenu{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #200F15;
+  opacity: 0.7;
+  width: 100%;
+  ul{
+
+    display: flex;
+    align-items: center;
+    margin-bottom:0;
+    li{
+      &:after{
+        content: ur('/assets/images/arrow-down.svg');
+        width: 15px;
+        height: 15px;
+        position: relative;
+      }
+      list-style-type: none;
+      a{
+        color: $main-white;
+      }
+    }
+  }
+}

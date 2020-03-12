@@ -1,0 +1,129 @@
+@import '../assets/scss/mixin';
+
+@import'../assets/scss/variables';
+
+.category{
+  &_wrapper{
+    .category-bg{
+      width: 100%;
+    }
+    &__header{
+      position: relative;
+    }
+    &__main{
+      margin: 0 60px;
+      &-breadcrumbs{
+        margin: 24px 0;
+        a{
+          text-decoration: none;
+          color: #777777;
+          @include mm(14, 20)
+        }
+      }
+      &-title{
+        border-radius: 3px 3px 0px 0px;
+        display: flex;
+        background-image: url('/assets/images/main-title-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 75px;
+        // display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+          @include mm(36, 48, 900);
+          color: $main-white;
+        }
+      }
+      &-card{
+        margin-top: 40px;
+        &__wrap{
+          img{
+            border-radius: 3px;
+          }
+          &-includes{
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            img{
+              margin-right: 15px;
+            }
+          }
+          &-bonus{
+            display: flex;
+            flex-wrap: wrap;
+            div{
+              margin-right: 12px;
+            }
+            div>span{
+              @include mm(10, 18, 500);
+              color: #FFFFFF;
+              border-radius: 5px;
+              padding: 4px 10px;
+            }
+            &__best{
+              span{
+                width: auto;
+                background: #C27500;
+              }
+            }
+            &__discount{
+              span{
+                background: #E44242;
+              }
+            }
+            &__termal{
+              span{
+                background: #B14141;
+              }
+            }
+            &__pool{
+              span{
+                background: #003C5E;
+              }
+            }
+            &__spa{
+              span{
+                background: #85CCAA;
+              }
+            }
+          }
+          &-information{
+            margin-right: 15%;
+            p{
+              color: #333333;
+              @include mm(24, 36, 900);
+              margin-top: 8px;
+            }
+            span{
+              color: #777777;
+              @include mm(16, 24);
+              margin-top: 12px;
+            }
+          }
+          &-price{
+            margin-top: 12px;
+            span{
+              @include mm(24, 36);
+            }
+            .price{
+              color: #333333;
+            }
+            .price-new{
+              color: #009120;
+            }
+            .old-price{
+              color: #777777;
+            }
+          }
+          .per-person{
+            @include mm(16, 24);
+            color: #777777;
+          }
+        }
+      }
+    }
+  }
+}
